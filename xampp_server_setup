@@ -1,0 +1,10 @@
+ 1  clear
+    2  cd
+    3  ll
+    4  apt update
+    5  wget https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/8.0.30/xampp-linux-x64-8.0.30-0-installer.run
+    6  ll
+    7  chmod +x xampp-linux-x64-8.0.30-0-installer.run
+    8  ll
+    9  ./xampp-linux-x64-8.0.30-0-installer.run
+   10  history
