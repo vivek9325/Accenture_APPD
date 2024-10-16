@@ -1,0 +1,17 @@
+ 20  wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc |  gpg --dearmor | sudo tee /usr/share/keyrings/mongodb.gpg > /dev/null
+   21  echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+   22  sudo apt update
+   23  sudo apt install mongodb-org
+   24  systemctl start monogd
+   25  mongo --version
+   26  cd /usr
+   27  ll
+   28  clear
+   29  sudo
+   30  cd
+   31  clear
+   32  sudo apt install mongodb-org
+   33  ps all | grep mongo
+   34  sudo systemctl start mongod
+   35  sudo systemctl status mongod
+   36  history
