@@ -16,3 +16,24 @@
    14  sudo apt install net-tools
    15  ./xampp start
    16  history
+
+
+cd /opt/lampp/etc/extra
+
+make changes in ----> httpd-xampp.conf
+
+# since XAMPP 1.4.3
+<Directory "/opt/lampp/phpmyadmin">
+    AllowOverride AuthConfig Limit
+    Require all granted    #actual change is from local to all granted
+    ErrorDocument 403 /error/XAMPP_FORBIDDEN.html.var
+</Directory>
+
+
+Go to ----> /opt/lampp
+
+restarting the xampp server -----> ./xampp restart
+
+
+
+
