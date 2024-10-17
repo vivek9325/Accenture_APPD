@@ -1,0 +1,20 @@
+7  cd /tmp/
+    8  ll
+    9  cd
+   10  mkdir expressCart
+   11  cd expressCart/
+   12  unzip /tmp/expressCart-master.zip -d .
+   13  apt-get install unzip
+   14  unzip /tmp/expressCart-master.zip -d .
+   15  ll
+   16  cd expressCart-master/
+   17  ll
+   18  cd ..
+   19  cp expressCart-master/* .
+   20  cp -r expressCart-master/* .
+   21  ll
+   22  cd ..
+   23  ll
+   24  cd expressCart/
+   25  ll
+   26  history
