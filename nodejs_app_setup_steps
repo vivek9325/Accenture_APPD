@@ -25,3 +25,9 @@
    30  npm fund
    31  npm audit fix
    32  history
+
+
+npm run testdata
+
+node app.js
+ 
