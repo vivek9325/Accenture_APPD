@@ -18,3 +18,10 @@
    24  cd expressCart/
    25  ll
    26  history
+24  cd expressCart/
+   25  ll
+   28  apt install npm
+   29  npm install
+   30  npm fund
+   31  npm audit fix
+   32  history
