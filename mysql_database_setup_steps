@@ -1,0 +1,7 @@
+    1  cd
+    2  clear
+    3  apt update
+    4  clear
+    5  sudo apt install mysql-server
+    6  mysql -u root -p
+    7  history
