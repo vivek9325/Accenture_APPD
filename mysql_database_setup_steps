@@ -5,3 +5,16 @@
     5  sudo apt install mysql-server
     6  mysql -u root -p
     7  history
+    8  sudo apt update
+    9  apt install openjdk-8-jdk
+   10  java -version
+   11  echo $JAVA_HOME
+   12  nano /etc/profile
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+
+   14  source /etc/profile
+   17  echo $JAVA_HOME   //Verify the Java Path is showing or not.
+   18  pwd
+   19  history
