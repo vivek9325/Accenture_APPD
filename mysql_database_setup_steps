@@ -18,3 +18,14 @@ export PATH=$JAVA_HOME/bin:$PATH
    17  echo $JAVA_HOME   //Verify the Java Path is showing or not.
    18  pwd
    19  history
+
+ 30  cd /opt/
+   31  mkdir db_agent
+   32  cd db_agent/
+   33  apt-get install unzip
+   34  unzip /tmp/db-agent-24.8.0.4467_2.1.zip -d .
+   35  ll
+   36  clear
+   37  ll
+   38  history
+
