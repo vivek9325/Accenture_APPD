@@ -3,8 +3,122 @@
     3  apt install update
     4  apt update
     5  clear
-    6  apt install openjdk-11-jdk
+    6  apt install openjdk-21-jdk
     7  java -version
     9  wget https://dlcdn.apache.org/tomcat/tomcat-11/v11.0.0/bin/apache-tomcat-11.0.0.tar.gz
    10  ll
    11  history
+
+
+15  mkdir tomcat
+
+   16  ll
+
+   17  cd tomcat/
+
+   18  cp /root/apache-tomcat-11.0.0.tar.gz .
+
+   19  tar xvzf apache-tomcat-11.0.0.tar.gz
+
+   20  ll
+
+   21  cd apache-tomcat-11.0.0
+
+   22  ll
+
+   23  cd bin/
+
+   24  ll
+
+   25  ./startup.sh
+
+   26  cd ..
+
+   27  ll
+
+   28  cd bin/
+
+   29  ll
+
+   30  sudo groupadd tomcat
+
+   31  sudo useradd -g tomcat -d /opt/tomcat -s /bin/false tomcat
+
+   32  chown -R tomcat:tomcat /opt/tomcat/
+
+   33  ll
+
+   34  sudo +x /opt/tomcat/bin/*.sh
+
+   35  sudo chmod +x /opt/tomcat/bin/*.sh
+
+   36  chmod +x /opt/tomcat/bin/*.sh
+
+   37  ll
+
+   38  cd ..
+
+   39  ll
+
+   40  chmod +x /opt/tomcat/bin/*.sh
+
+   41  chmod +x /opt/tomcat/bin
+
+   42  cd /opt/tomcat/
+
+   43  ll
+
+   44  cp -r apache-tomcat-11.0.0/* .
+
+   45  ll
+
+   46  chown -R tomcat:tomcat /opt/tomcat/
+
+   47  ll
+
+   48  chmod +x /opt/tomcat/bin/*.sh
+
+   49  cd bin/
+
+   50  ll
+
+   51  ./startup.sh
+
+   52  sudo ufw allow 8080/tcp
+
+   53  sudo ufw reload
+
+   54  history
+
+ 
+85  sudo apt update
+
+   86  sudo apt install openjdk-19-jdk -y
+
+   87  sudo apt install openjdk-21-jdk -y
+
+   88  ./shutdown.sh
+
+   89  sudo update-alternatives --config java
+
+   92  nano ~/.profile
+
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+
+export PATH=$JAVA_HOME/bin:$PATH
+
+ 
+
+   93  source ~/.profile
+
+   94  ./shutdown.sh
+
+   95  echo $JAVA_HOME
+
+   99  ./shutdown.sh
+
+  100  ./startup.sh
+
+  101  history
+
+ 
