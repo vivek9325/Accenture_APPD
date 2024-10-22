@@ -35,3 +35,20 @@
    34  docker ps
    35  docker run -it ubuntu /bin/bash
    36  history
+
+45  docker ps
+   46  docker ps -all
+   47  docker ps -a
+   48  history
+   49  docker pull wordpress:latest
+   50  docker images
+   51  docker run -d wordpress
+   52  docker ps
+   53  docker pull mysql:5.7
+   54  docker network create wordpress-network
+   55  docker run -d --name wordpress-db --network wordpress-network   -e MYSQL_ROOT_PASSWORD=yourpassword   -e MYSQL_DATABASE=wordpress   mysql:5.7
+   56  docker run -d --name wordpress --network wordpress-network   -e WORDPRESS_DB_HOST=wordpress-db:3306   -e WORDPRESS_DB_USER=root   -e WORDPRESS_DB_PASSWORD=yourpassword   -p 8080:80 wordpress:latest
+   57  docker ps
+   58  clear
+   59  history
+
