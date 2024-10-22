@@ -12,3 +12,26 @@
    12  sudo docker --version
    13  clear
    14  history
+
+
+  16  docker images
+   17  docker pull nginx
+   18  docker images
+   19  docker pull hello-world
+   20  docker pull alpine
+   21  docker pull httpd
+   22  docker images
+   23  docker pull ubuntu
+   24  docker images
+   25  docker rmi ubuntu
+   26  docker images
+   27  docker search nginix
+   28  clear
+   29  docker pull ubuntu
+   30  docker run ubuntu
+   31  docker ps
+   32  docker ps -all
+   33  docker run -d ubuntu
+   34  docker ps
+   35  docker run -it ubuntu /bin/bash
+   36  history
