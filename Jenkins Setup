@@ -1,0 +1,12 @@
+  1  clear
+    2  cd
+    3  apt updae
+    4  apt update
+    5  apt upgrade -y
+    6  sudo apt install openjdk-11-jdk -y
+    7  java --version
+    8  clear
+    9  wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+   10  sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+   11  sudo apt update
+   12  history
